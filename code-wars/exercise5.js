@@ -7,7 +7,7 @@
 function pigIt(str){
   let array = str.split(" ");
   for (let [arrIndex, value] of array.entries()) {
-    if (value.search(/[w]/g)) {
+    if (value.search(/[\W]/)) {
       array[arrIndex] = `${value.substring(1)}${value[0]}${'ay'}`
     } 
   }
